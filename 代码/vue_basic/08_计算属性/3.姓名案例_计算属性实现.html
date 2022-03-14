@@ -57,6 +57,7 @@
 					},
 					//set什么时候调用? 当fullName被修改时。
 					set(value){
+						console.log('set被调用了')
 						console.log('set',value)
 						const arr = value.split('-')
 						this.firstName = arr[0]
